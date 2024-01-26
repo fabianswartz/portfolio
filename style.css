@@ -1,0 +1,287 @@
+html {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+body{
+    background-color: white;
+    font-family: 'Times New Roman';
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    padding-bottom: 1cm;
+    font-size:220px;
+    font-weight: 20;
+    font-style: oblique;
+    margin-top: 150px;
+    margin-left: 30px;
+    color: #a30000;
+}
+
+main section p{
+    font-size: 80px;
+    font-weight: 400;
+    font-style: oblique;
+    text-align: center;
+    color: white;
+}
+
+main div p{
+    font-size: 50px;
+    font-weight: 400;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 15%;
+    color: black;
+}
+
+.container{
+    height: 100vh;
+    width: 100vh;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    11% {
+        opacity: 0;
+    }
+
+    22% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    44% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    77% {
+        opacity: 0;
+    }
+
+    88% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    animation: fade 36s ease-in-out infinite alternate
+}
+
+.background:nth-last-of-type(1){
+    animation-delay: 0s;
+}
+
+.background:nth-last-of-type(2){
+    animation-delay: 4s;
+}
+
+.background:nth-last-of-type(3){
+    animation-delay: 8s;
+}
+
+.background:nth-last-of-type(4){
+    animation-delay: 12s;
+}
+
+.background:nth-last-of-type(5){
+    animation-delay: 16s;
+}
+
+.background:nth-last-of-type(6){
+    animation-delay: 20s;
+}
+
+.background:nth-last-of-type(7){
+    animation-delay: 24s;
+}
+
+.background:nth-last-of-type(8){
+    animation-delay: 28s;
+}
+
+.background:nth-last-of-type(9){
+    animation-delay: 32s;
+}
+
+main nav ul, header nav ul, footer nav ul{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: green; */
+}
+
+footer{
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+nav ul li{
+    /* background-color: pink; */
+    text-align: center;
+    list-style-type: none;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+header nav ul, footer nav ul{
+    font-family: helvetica;
+    margin: 40px 280px 0px 240px;
+}
+
+
+main nav ul, footer nav ul{
+    margin: 10px 280px 0px 240px;
+}
+
+header nav a, footer nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #a30000;
+}
+
+main nav ul li a{
+    text-decoration: none;
+    font-size: 80px;
+    color: #a30000;
+}
+
+.diashow{
+    font-size: 350px;
+    mix-blend-mode:luminosity;
+    margin: 260px 0px 0px 230px;
+}
+
+
+header nav ul li{
+    width: 8%
+}
+
+main nav ul li:nth-of-type(1){
+    margin-left: 13px;
+}
+
+main nav ul li:nth-of-type(3){
+    margin-right: 13px;
+}
+
+
+nav ul li:hover{
+    transform: skew(-15deg);
+}
+
+.first{
+    transform: skew(-15deg);
+}
+
+.second{
+    transform: skew(-15deg);
+}
+
+.third{
+    transform: skew(-15deg);
+}
+
+section{
+    scale: 50%;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin: -100px 0px -400px 0px;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    background: black;
+    border: solid white;
+    border-radius: 2px;
+}
+
+
+main section:nth-of-type(1){
+    translate: -10%;
+    margin-bottom: -460px;
+    /* background: none; */
+}
+
+main section:nth-of-type(2){
+    translate: 20%;
+    /* background: none; */
+}
+
+main section:nth-of-type(3){
+    translate: -15%;
+    /* background: none; */
+    margin-top: -550px;
+    width: 86%;
+}
+
+main section img{
+    width: 700px;
+}
+
+section:hover{
+    scale: 55%;
+}
+
+.albumtitle{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    margin: 5px 0px 0px 0px;
+}
+
+.container2 img{
+    max-width: 540px;
+    margin: 7.3px 10px 7.3px 10px;
+} 
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.container2 .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+}
+
